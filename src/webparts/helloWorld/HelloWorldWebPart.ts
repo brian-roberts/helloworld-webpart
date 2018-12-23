@@ -55,6 +55,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         return response.json();
       });
    }
+
    private _renderList(items: ISPList[]): void {
     let html: string = '';
     items.forEach((item: ISPList) => {
@@ -85,8 +86,6 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         });
     }
   }
-   
-   
 
   public render(): void {
     this.domElement.innerHTML = `
